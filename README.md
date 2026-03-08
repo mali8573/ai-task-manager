@@ -5,15 +5,15 @@
 
 ## 🌟 יכולות המערכת
 * **שיחה טבעית:** הוספה, צפייה וניהול משימות באמצעות טקסט חופשי.
-* **ביצוע פעולות (Tool Calling):** הסוכן יודע מתי להפעיל פונקציות קוד כדי לעדכן את רשימת המשימות.
-* **ממשק משתמש מודרני:** UI שנבנה ב-React עם חווית משתמש חלקה.
+* **ביצוע פעולות (Tool Calling):** הסוכן יודע מתי להפעיל פונקציות פייתון כדי לעדכן את רשימת המשימות.
+* **ממשק משתמש מודרני:** UI שנבנה ב-React עם עיצוב נקי וחווית משתמש חלקה.
 * **Backend מהיר:** שרת FastAPI המנהל את התקשורת בין המודל לממשק.
 
 ## 🛠 טכנולוגיות
-* **Frontend:** React, Vite, Tailwind CSS.
+* **Frontend:** React 19, Vite, Custom CSS3 Styling.
 * **Backend:** Python, FastAPI, Uvicorn.
-* **AI Model:** Llama 3.3 (via Groq Cloud).
-* **Tools:** LangChain / Custom Tool Integration.
+* **AI Model:** Llama 3.3-70b (via Groq Cloud).
+* **Core Logic:** Function Calling architecture for task management.
 
 ## 🚀 איך מפעילים את הפרויקט?
 
@@ -24,8 +24,8 @@
 
 ### 2. הגדרת השרת (Backend)
 ```bash
-# התקנת ספריות
-pip install -r requirements.txt
+# התקנת ספריות (יש לוודא קיום requirements.txt)
+pip install fastapi uvicorn groq python-dotenv
 
 # יצירת קובץ .env והוספת המפתח
 echo "GROQ_API_KEY=your_key_here" > .env
